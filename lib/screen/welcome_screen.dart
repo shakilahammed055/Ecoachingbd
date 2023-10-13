@@ -1,3 +1,4 @@
+import 'package:ecoachingbd/widget/elevatedbutton.dart';
 import 'package:flutter/material.dart';
 
 class WelcomeScreen extends StatelessWidget {
@@ -22,20 +23,7 @@ class WelcomeScreen extends StatelessWidget {
               Spacer(),
               Image.asset("assets/image/welcome.png"),
               Spacer(),
-              ElevatedButton(
-                onPressed: (){}, 
-                child: Text("Log In Now"),
-                style: ElevatedButton.styleFrom(
-                  padding: EdgeInsets.only(left: 30,right: 30),
-                  foregroundColor: Color(0xFF2B2BC3),
-                  minimumSize: Size(150, 40),
-                  textStyle: TextStyle(
-                    
-                    fontWeight: FontWeight.bold,
-                    fontSize: 20,
-                  )
-                )
-                ),
+              elevatedbutton(),
               Spacer(),
               
               
@@ -46,3 +34,4 @@ class WelcomeScreen extends StatelessWidget {
     );
   }
 }
+
